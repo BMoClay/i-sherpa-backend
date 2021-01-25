@@ -1,7 +1,8 @@
 class GuidesController < ApplicationController
     def index
         guides = Guide.all
-        render json: guides
+        # users = User.all
+        render json: guides 
     end
 
     def show

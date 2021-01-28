@@ -5,6 +5,8 @@ class User < ApplicationRecord
     has_many :comments
     has_many :commented_guides, :through => :comments, :source => "guide"
     has_many :tokens
-
+    has_many :purchased_guides
+    has_many :owned_guides, :through => :purchased_guides, :source => "guide"
+    
     validates :username, uniqueness: true
 end

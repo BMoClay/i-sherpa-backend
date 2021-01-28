@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :purchased_guides
   resources :tokens
   resources :likes
   resources :comments

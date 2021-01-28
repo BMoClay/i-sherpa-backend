@@ -5,5 +5,8 @@ class UserSerializer < ActiveModel::Serializer
   has_many :comments
   has_many :commented_guides, :through => :comments, :source => "guide"
   has_many :tokens
-  attributes :id, :name, :username, :email, :img_url, :likes, :guides, :liked_guides, :comments, :commented_guides, :tokens
+  has_many :purchased_guides
+  has_many :owned_guides, :through => :purchased_guides, :source => "guide"
+
+  attributes :id, :name, :username, :email, :img_url, :likes, :guides, :liked_guides, :comments, :commented_guides, :tokens, :purchased_guides
 end

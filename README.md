@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+iSherpa - How It Works
 
-Things you may want to cover:
+Welcome to iSherpa! A community to read and share guides on any subject! To read another user's guide, you need to pay with a token. How do you earn tokens? By writing your own guide! Also, if another user reads your guide, you'll earn a token! Your token wallet is visible on the navigation bar once you log in.
 
-* Ruby version
+Keep reading, writing, and sharing guides! Enjoy! -The iSherpa Team
 
-* System dependencies
+* To set up environment, cd into project's backend folder, and run "rails s" in the terminal.
 
-* Configuration
+* Navigate to localhost:3000 to make sure you're successfully on Rails.
 
-* Database creation
+* You can navigate to localhost:3000/users or /guides to check that the Rails API is working.
 
-* Database initialization
+* Navigate to your index.html in the project's frontend folder and open it up in the browser.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...

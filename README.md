@@ -1,18 +1,47 @@
 # README
 
-iSherpa - How It Works
+## iSherpa (backend)
 
 Welcome to iSherpa! A community to read and share guides on any subject! To read another user's guide, you need to pay with a token. How do you earn tokens? By writing your own guide! Also, if another user reads your guide, you'll earn a token! Your token wallet is visible on the navigation bar once you log in.
 
 Keep reading, writing, and sharing guides! Enjoy! -The iSherpa Team
 
-* To set up environment, cd into project's backend folder, and run "rails s" in the terminal.
+## Installation
 
-* Navigate to localhost:3000 to make sure you're successfully on Rails.
+Ruby version: 2.6.1
 
-* You can navigate to localhost:3000/users or /guides to check that the Rails API is working.
+Run bundle install to install all Ruby gems and dependencies.
 
-* Navigate to your index.html in the project's frontend folder and open it up in the browser.
+```zsh
+bundle install
+```
 
+Run rails db:create to set up database. This app uses Postgresql for the database.
 
+```zsh
+rails db:create
+```
 
+Run rails db:migrate to create tables and migrate them to the database.
+
+```zsh
+rails db:migrate
+```
+
+Run rails db:seed to seed the database with the data necessary to run the app.
+
+```zsh
+rails db:seed
+```
+
+## Usage
+
+To run the backend, run rails s.
+
+```zsh
+rails s
+```
+
+## Authors and acknowledgment
+
+Built with passion by Ori Markowitz & Ben Morgan-Cleveland 2021
